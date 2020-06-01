@@ -2,7 +2,7 @@ from PIL import Image,ImageDraw,ImageFont
 from datetime import datetime
 import Frames
 import time
-import PIInterface
+import PIInterface as PI
 import logging
 
 logging.basicConfig(filename = 'cal_logs',\
@@ -41,7 +41,6 @@ if __name__ == '__main__':
     #----------------------------------------------Initialise----------------------------------------------#
     lastUpdate = None
     lastTodo = None
-    #PI = PIInterface.PI()
 
     #Fonts
     timeFont = ImageFont.truetype('fonts/arial.ttf', 12)
@@ -83,7 +82,7 @@ if __name__ == '__main__':
                 draw.text((660, 466), 'Last updated at {0:%I:%M%p}'.format(lastUpdate), font = timeFont, fill = 0)
                 #Print image
                 imageOut.show()
-                #PI.print(imageOut)
+                PI.printOut(imageOut)
             
         except Exception as e:
             print(e)
