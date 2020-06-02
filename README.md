@@ -10,7 +10,13 @@ To use repository:
 
 git clone https://github.com/ylam004/e-ink-Calendar.git
 
-cd e-ink-Calendar/
+cd e-ink-Calendar/Frames/
+
+sudo nano keys_example.py
+
+Edit the file by adding your own API keys, then save the file as keys.py
+
+cd ..
 
 sudo python3 ECalendar.py
 
