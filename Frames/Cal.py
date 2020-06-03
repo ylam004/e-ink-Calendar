@@ -9,7 +9,7 @@ class Cal(Frame.Frame):
         cal = calendar.Calendar(6).monthdayscalendar(2020, cur.month) #Get lists of weeks
         #Fonts
         calFont = ImageFont.truetype('fonts/arial.ttf', 13)
-        dayFont = ImageFont.truetype('fonts/arial.ttf', 60)
+        dayFont = ImageFont.truetype('fonts/arial.ttf', 54)
         dateFont = ImageFont.truetype('fonts/arial.ttf', 80)
         monthFont = ImageFont.truetype('fonts/arial.ttf', 40)
         

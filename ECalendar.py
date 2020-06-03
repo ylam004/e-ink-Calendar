@@ -73,9 +73,11 @@ if __name__ == '__main__':
     todo.boder(2, 1)
 
     while True:
+        print('Starting')
         try:
             logging.info('Checking for updates')
             if update(draw):
+                print('updating')
                 #Update time
                 lastUpdate = datetime.now()
                 draw.rectangle((660, 466, 800, 480), fill = 1)
@@ -83,6 +85,9 @@ if __name__ == '__main__':
                 #Print image
                 imageOut.show()
                 PI.printOut(imageOut)
+            
+            else:
+                print('no updates')
             
         except Exception as e:
             print(e)
